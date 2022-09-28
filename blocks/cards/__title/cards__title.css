@@ -1,0 +1,28 @@
+.cards__title {
+  font-size: 72px;
+  line-height: 76px;
+  font-family: "Inter-ExtraBold", sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .cards__title {
+    font-size: calc(72px - (1024px - 100vw)/((1024 - 768)/(72 - 42)));
+    line-height: calc(76px - (1024px - 100vw)/((1024 - 768)/(76 - 46)));
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .cards__title {
+    font-size: calc(42px - (768px - 100vw)/((768 - 320)/(42 - 32)));
+    line-height: calc(46px - (768px - 100vw)/((768 - 320)/(46 - 35)));
+  }
+}
+
+@media (max-width: 575px) {
+  .cards__title {
+    margin: 0 calc(100% - calc(100% - 16px)) 0;
+  }
+}

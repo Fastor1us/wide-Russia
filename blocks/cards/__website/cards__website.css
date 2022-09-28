@@ -1,0 +1,9 @@
+.cards__website {
+  align-self: end;
+}
+
+@media (max-width: 575px) {
+  .cards__website {
+    margin: 0 calc(100% - calc(100% - 16px)) 0;
+  }
+}

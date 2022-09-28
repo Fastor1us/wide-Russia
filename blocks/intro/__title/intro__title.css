@@ -1,0 +1,18 @@
+.intro__title {
+  font-size: 54px;
+  line-height: 58px;
+  margin: 0;
+  max-width: 690px;
+}
+
+@media (max-width: 768px) {
+  .intro__title {
+    /* width: calc(640px - (768px - 100vw)/((768 - 320)/(640 - 288)));
+    font-size: calc(30px - (768px - 100vw)/((768 - 320)/(30 - 16)));
+    line-height: calc(36px - (768px - 100vw)/((768 - 320)/(36 - 20)));
+    margin-bottom: calc(56px - (768px - 100vw)/((768 - 320)/(56 - 40))); */
+    font-size: calc(54px - (768px - 100vw)/((768 - 320)/(54 - 32)));
+    line-height: calc(58px - (768px - 100vw)/((768 - 320)/(58 - 35)));
+    width: calc(720px - (768px - 100vw)/((768 - 320)/(720 - 240)));
+  }
+}

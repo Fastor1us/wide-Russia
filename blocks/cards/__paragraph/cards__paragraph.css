@@ -1,0 +1,22 @@
+.cards__paragraph {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0 0 26px;
+}
+
+.cards__paragraph:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .cards__paragraph {
+    font-size: calc(18px - (1024px - 100vw)/((1024 - 768)/(18 - 16)));
+  }
+}
+
+@media (max-width: 768px) {
+  .cards__paragraph {
+    margin-bottom: 25px;
+    font-size: 16px;
+  }
+}

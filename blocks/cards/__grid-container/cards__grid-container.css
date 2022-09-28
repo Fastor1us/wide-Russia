@@ -1,0 +1,44 @@
+.cards__grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 48px;
+  column-gap: 40px;
+  margin-bottom: 80px;
+}
+
+.cards__grid-container:last-of-type {
+  margin-bottom: 92px;
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .cards__grid-container {
+    column-gap: calc(40px - (1280px - 100vw)/((1280 - 1024)/(40 - 32)));
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .cards__grid-container {
+    column-gap: calc(32px - (1024px - 100vw)/((1024 - 768)/(32 - 28)));
+    margin-bottom: calc(80px - (1024px - 100vw)/((1024 - 768)/(80 - 73)));
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .cards__grid-container {
+    margin-bottom: calc(73px - (768px - 100vw)/((768 - 320)/(73 - 50)));
+  }
+}
+
+@media (min-width: 575px) and (max-width: 768px) {
+  .cards__grid-container {
+    column-gap: calc(28px - (768px - 100vw)/((768 - 575)/(28 - 20)));
+  }
+}
+
+@media (max-width: 575px) {
+  .cards__grid-container {
+    grid-template-columns: 1fr;
+    row-gap: 32px;
+    column-gap: 0;
+  }
+}

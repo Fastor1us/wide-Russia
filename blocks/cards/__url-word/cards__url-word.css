@@ -1,0 +1,20 @@
+.cards__url-word {
+  color: #AAA;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 12px;
+  line-height: 1.7;
+  margin: 0 0 12px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .cards__url-word {
+    line-height: calc(12px*1.7 - (1024px - 100vw)/((1024 - 768)/(12*1.7 - 12)));
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .cards__url-word {
+    line-height: 1;
+  }
+}

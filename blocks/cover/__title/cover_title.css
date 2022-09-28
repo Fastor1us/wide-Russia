@@ -1,0 +1,20 @@
+.cover__title {
+  font-size: 72px;
+  line-height: 76px;
+  font-family: "Inter-ExtraBold", sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  max-width: 560px;
+  text-align: center;
+  margin: 0 0 32px;
+
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .cover__title {
+    font-size: calc(72px - (768px - 100vw)/((768 - 320)/(72 - 32)));
+    line-height: calc(76px - (768px - 100vw)/((768 - 320)/(76 - 35)));
+    width: calc(560px - (768px - 100vw)/((768 - 320)/(560 - 250)));
+    margin-bottom: calc(32px - (768px - 100vw)/((768 - 320)/(32 - 16)));
+  }
+}

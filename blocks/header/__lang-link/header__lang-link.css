@@ -1,0 +1,17 @@
+.header__lang-link {
+  color: inherit;
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.header__lang-link:first-of-type {
+  margin-right: 18px;
+}
+
+@media (max-width: 768px) {
+  .header__lang-link {
+    font-size: calc(24px - (768px - 100vw)/((768 - 320)/(24 - 18)));
+    line-height: calc(28px - (768px - 100vw)/((768 - 320)/(28 - 20)));
+  }
+}
