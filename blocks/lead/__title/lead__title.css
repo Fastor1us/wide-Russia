@@ -4,9 +4,7 @@
   font-size: 96px;
   line-height: 100px;
   margin: 0 0 32px;
-  font-family: 'Inter-ExtraBold', sans-serif;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
+  font-weight: 900;
 }
 
 @media (max-width: 768px) {

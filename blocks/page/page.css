@@ -1,26 +1,27 @@
 @font-face {
   src: url(../../fonts/Inter-Light.woff);
-  font-family: 'Inter-Light';
+  font-family: 'Inter';
+  font-weight: normal;
 }
 
 @font-face {
-  src: url(../../fonts/Inter-Medium.woff);
-  font-family: 'Inter-Medium';
+  src: url(../../fonts/Inter-Bold.woff);
+  font-family: 'Inter';
+  font-weight: 700;
 }
 
 @font-face {
-  src: url(../../fonts/Inter-ExtraBold.woff);
-  font-family: 'Inter-ExtraBold';
+  src: url(../../fonts/Inter-Black.woff);
+  font-family: 'Inter';
+  font-weight: 900;
 }
-
-
 
 .page {
   background: #2A2C2F;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: 'Inter-Light', sans-serif;
+  font-family: 'Inter', sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   color: white;
