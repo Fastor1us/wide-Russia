@@ -1,8 +1,5 @@
 .photo-grid {
   max-width: 1184px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
   margin-bottom: 92px;
   /* outline: 1px solid red; */
 }
@@ -10,15 +7,12 @@
 @media (min-width: 1024px) and (max-width: 1280px) {
   .photo-grid {
     width: calc(100vw - 96px);
-    gap: calc(16px - (1280px - 100vw)/((1280 - 1024)/(16 - 14)));
   }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .photo-grid {
     max-width: calc(928px - (1024px - 100vw)/((1024 - 768)/(928 - 720)));
-    grid-template-columns: repeat(3, 1fr);
-    gap: calc(14px - (1024px - 100vw)/((1024 - 768)/(14 - 11)));
     margin-bottom: calc(92px - (1024px - 100vw)/((1024 - 768)/(92 - 88)));
   }
 }
@@ -26,8 +20,6 @@
 @media (min-width: 425px) and (max-width: 768px) {
   .photo-grid {
     max-width: calc(720px - (768px - 100vw)/((768 - 425)/(720 - 400)));
-    grid-template-columns: repeat(2, 1fr);
-    gap: calc(16px - (768px - 100vw)/((768 - 425)/(16 - 12)));
   }
 }
 
@@ -40,7 +32,5 @@
 @media (max-width: 425px) {
   .photo-grid {
     max-width: calc(400px - (425px - 100vw)/((425 - 320)/(400 - 288)));
-    grid-template-columns: 1fr;
-    gap: 12px;
   }
 }

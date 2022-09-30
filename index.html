@@ -15,10 +15,10 @@
     <!-- Шапка сайта, блок header -->
     <header class="header">
       <img src="./images/logo.svg" alt="Россия на карте мира" class="header__logo">
-      <div>
-        <a href="#" class="header__lang-link header__lang-link_underline" title="Русский язык">Ru</a>
-        <a href="#" class="header__lang-link" title="Английский язык">En</a>
-      </div>
+      <ul class="header__list">
+        <li><a href="#" class="header__lang-link header__lang-link_active" title="Русский язык">Ru</a></li>
+        <li><a href="#" class="header__lang-link" title="Английский язык">En</a></li>
+      </ul>
     </header>
 
     <main class="content">
@@ -47,25 +47,27 @@
 
       <!-- Секция, блок photo-grid -->
       <section class="photo-grid" aria-label="Блок фотографий, Путешествие по России">
-        <img src="./images/photo-grid/photo-grid-train.jpg" class="photo-grid__item" alt="Вид из окна поезда дальнего следования. Железные пути, море, редкие берёзы">
-        <img src="./images/photo-grid/photo-grid-tuman.jpg" class="photo-grid__item" alt="Осень, природа, поле, рассвет. Овчарка стоит на стоге сена, вокруг туман">
-        <img src="./images/photo-grid/photo-grid-sochi.jpg" class="photo-grid__item" alt="Вид с высоты полета птицы на хвойный лес окутанный туманом">
-        <img src="./images/photo-grid/photo-grid-arisa.jpg" class="photo-grid__item" alt="УАЗик на озере на толстом прозрачном льду">
-        <img src="./images/photo-grid/photo-grid-atharva-tulsi.jpg" class="photo-grid__item" alt="Вид с высока на хребты снежных гор. Над облаками">
-        <img src="./images/photo-grid/photo-grid-baikal.jpg" class="photo-grid__item" alt="Бескрайнее море, пустой пляж, прилив. В далеке, над морем, веднеются хребты гор">
-        <img src="./images/photo-grid/photo-grid-elbrus.jpg" class="photo-grid__item" alt="От подножья горы в весь к заснеженным вершинам гор. Эльбрус">
-        <img src="./images/photo-grid/photo-grid-kondratiev.jpg" class="photo-grid__item" alt="Север, снег. Фокус на табличке пешеходного перехода на фоне горы буйков на льду">
-        <img src="./images/photo-grid/photo-grid-kamchatka-1.jpg" class="photo-grid__item" alt="Горные массивы скрывающиеся в облаках. Камчатка">
-        <img src="./images/photo-grid/photo-grid-kamchatka-2.jpg" class="photo-grid__item" alt="дальний восток, степь простирается к подножью возвышающихся гор. Камчатка">
-        <img src="./images/photo-grid/photo-grid-baikal-2.jpg" class="photo-grid__item" alt="Высокий утёс дугой вдоль берюзового моря. Байкал">
-        <img src="./images/photo-grid/photo-grid-ergaki.jpg" class="photo-grid__item" alt="Горы в кустом тумане. Севернее Монголии. Природый парк Ергаки, Россия">
+        <ul class="photo-grid__list">
+          <li><img src="./images/photo-grid/photo-grid-train.jpg" class="photo-grid__item" alt="Вид из окна поезда дальнего следования. Железные пути, море, редкие берёзы"></li>
+          <li><img src="./images/photo-grid/photo-grid-tuman.jpg" class="photo-grid__item" alt="Осень, природа, поле, рассвет. Овчарка стоит на стоге сена, вокруг туман"></li>
+          <li><img src="./images/photo-grid/photo-grid-sochi.jpg" class="photo-grid__item" alt="Вид с высоты полета птицы на хвойный лес окутанный туманом"></li>
+          <li><img src="./images/photo-grid/photo-grid-arisa.jpg" class="photo-grid__item" alt="УАЗик на озере на толстом прозрачном льду"></li>
+          <li><img src="./images/photo-grid/photo-grid-atharva-tulsi.jpg" class="photo-grid__item" alt="Вид с высока на хребты снежных гор. Над облаками"></li>
+          <li><img src="./images/photo-grid/photo-grid-baikal.jpg" class="photo-grid__item" alt="Бескрайнее море, пустой пляж, прилив. В далеке, над морем, веднеются хребты гор"></li>
+          <li><img src="./images/photo-grid/photo-grid-elbrus.jpg" class="photo-grid__item" alt="От подножья горы в весь к заснеженным вершинам гор. Эльбрус"></li>
+          <li><img src="./images/photo-grid/photo-grid-kondratiev.jpg" class="photo-grid__item" alt="Север, снег. Фокус на табличке пешеходного перехода на фоне горы буйков на льду"></li>
+          <li><img src="./images/photo-grid/photo-grid-kamchatka-1.jpg" class="photo-grid__item" alt="Горные массивы скрывающиеся в облаках. Камчатка"></li>
+          <li><img src="./images/photo-grid/photo-grid-kamchatka-2.jpg" class="photo-grid__item" alt="дальний восток, степь простирается к подножью возвышающихся гор. Камчатка"></li>
+          <li><img src="./images/photo-grid/photo-grid-baikal-2.jpg" class="photo-grid__item" alt="Высокий утёс дугой вдоль берюзового моря. Байкал"></li>
+          <li><img src="./images/photo-grid/photo-grid-ergaki.jpg" class="photo-grid__item" alt="Горы в кустом тумане. Севернее Монголии. Природый парк Ергаки, Россия"></li>
+        </ul>
       </section>
 
       <!-- Секция, блок places -->
       <section class="places">
         <ul class="cards">
           <li class="cards__grid-container">
-            <h3 class="cards__title">Куршская коса</h3>
+            <h2 class="cards__title">Куршская коса</h2>
             <div class="cards__website">
               <p class="cards__url-word">url</p>
               <a href="http://park-kosa.ru" class="cards__url-address" title="Куршская Коса">park-kosa.ru</a>
@@ -77,7 +79,7 @@
             </div>
           </li>
           <li class="cards__grid-container">
-            <h3 class="cards__title">Кольский</h3>
+            <h2 class="cards__title">Кольский</h2>
             <div class="cards__website">
               <p class="cards__url-word">url</p>
               <a href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy" class="cards__url-address" title="Нейшнл Джеографик">National Geographic</a>
@@ -89,7 +91,7 @@
             </div>
           </li>
           <li class="cards__grid-container">
-            <h3 class="cards__title">Алтай</h3>
+            <h2 class="cards__title">Алтай</h2>
             <div class="cards__website">
               <p class="cards__url-word">url</p>
               <a href="https://www.facebook.com/vera.bashmakova/posts/10156011613718822" class="cards__url-address" title="Фейсбук Вера Башмакова">Facebook</a>
@@ -101,7 +103,7 @@
             </div>
           </li>
           <li class="cards__grid-container">
-            <h3 class="cards__title">Зимний Байкал</h3>
+            <h2 class="cards__title">Зимний Байкал</h2>
             <div class="cards__website">
               <p class="cards__url-word">url</p>
               <a href="https://vk.com/baikalmile" class="cards__url-address" title="Вк Балтийская Миля">https://vk.com/baikalmile</a>
@@ -113,7 +115,7 @@
             </div>
           </li>
           <li class="cards__grid-container">
-            <h3 class="cards__title">Карелия</h3>
+            <h2 class="cards__title">Карелия</h2>
             <div class="cards__website">
               <p class="cards__url-word">url</p>
               <a href="http://vodlozero.ru" class="cards__url-address" title="Национальный парк Водлозерский">http://vodlozero.ru/</a>

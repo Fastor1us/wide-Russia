@@ -4,26 +4,26 @@
   background-position: center;
   background-repeat: no-repeat;
   width: min(100%, 1184px);
-  height: 740px;
+  min-height: 740px;
   display: flex;
   margin-bottom: 92px;
   /* outline: 1px solid blue; */
 }
 
 .cover:hover {
-  background-image: linear-gradient(0, rgba(42, 44, 47, .7), rgba(42, 44, 47, .7)), url(../../images/cover-trains.jpg);
+  background-image: linear-gradient(0, rgba(42, 44, 47, .8), rgba(42, 44, 47, .8)), url(../../images/cover-trains.jpg);
 }
 
 @media (min-width: 1024px) and (max-width: 1280px) {
   .cover {
-    height: calc(740px - (1280px - 100vw)/((1280 - 1024)/(740 - 640)));
+    min-height: calc(740px - (1280px - 100vw)/((1280 - 1024)/(740 - 640)));
     margin-bottom: calc(92px - (1280px - 100vw)/((1280 - 1024)/(92 - 88)));
   }
 }
 
 @media (max-width: 1024px) {
   .cover {
-    height: calc(640px - (1024px - 100vw)/((1024 - 320)/(640 - 200)));
+    min-height: calc(640px - (1024px - 100vw)/((1024 - 320)/(640 - 200)));
     margin-bottom: calc(88px - (1024px - 100vw)/((1024 - 320)/(88 - 64)));
   }
 }

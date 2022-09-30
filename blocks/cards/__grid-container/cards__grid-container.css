@@ -23,15 +23,15 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
-  .cards__grid-container {
-    margin-bottom: calc(73px - (768px - 100vw)/((768 - 320)/(73 - 50)));
-  }
-}
-
 @media (min-width: 575px) and (max-width: 768px) {
   .cards__grid-container {
     column-gap: calc(28px - (768px - 100vw)/((768 - 575)/(28 - 20)));
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .cards__grid-container {
+    margin-bottom: calc(73px - (768px - 100vw)/((768 - 320)/(73 - 50)));
   }
 }
 
