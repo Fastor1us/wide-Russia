@@ -15,6 +15,7 @@
 @media (max-width: 515px) {
   .footer__links {
     flex-direction: column;
+    row-gap: 32px;
     margin-bottom: 48px;
   }
 }

@@ -21,6 +21,9 @@
     column-gap: calc(32px - (1024px - 100vw)/((1024 - 768)/(32 - 28)));
     margin-bottom: calc(80px - (1024px - 100vw)/((1024 - 768)/(80 - 73)));
   }
+  .cards__grid-container:last-of-type {
+    margin-bottom: calc(92px - (1024px - 100vw)/((1024 - 768)/(92 - 90)));
+  }
 }
 
 @media (min-width: 575px) and (max-width: 768px) {
@@ -32,6 +35,9 @@
 @media (min-width: 320px) and (max-width: 768px) {
   .cards__grid-container {
     margin-bottom: calc(73px - (768px - 100vw)/((768 - 320)/(73 - 50)));
+  }
+  .cards__grid-container:last-of-type {
+    margin-bottom: calc(90px - (768px - 100vw)/((768 - 320)/(90 - 66)));
   }
 }
 
